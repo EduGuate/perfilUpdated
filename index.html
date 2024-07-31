@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/api/placeholder/300/300" alt="Foto de perfil" class="img-fluid rounded-circle mb-3">
+                <h2>Juan Pérez</h2>
+                <p>Desarrollador Web</p>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-content="Nombre: Juan Pérez<br>Teléfono: +34 123 456 789<br>Email: juan.perez@example.com<br>Dirección: Calle Falsa 123, Madrid, España">Contacto</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="popover" data-bs-html="true" data-bs-content='<a href="/path/to/CV.pdf" class="btn btn-primary" download>Download CV</a>'>CV</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Sobre mí</h3>
+                <p>Soy un apasionado desarrollador web con experiencia en HTML, CSS y JavaScript. Me encanta crear sitios web interactivos y responsivos.</p>
+                
+                <h3 class="mt-4">Habilidades</h3>
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">CSS</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="mt-4">Proyectos</h3>
+                <div class="row">
+                    <!-- Proyecto 1 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto Python 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto Python 1</h5>
+                                <p class="card-text">Descripción breve del proyecto Python 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto Python 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto Python 2</h5>
+                                <p class="card-text">Descripción breve del proyecto Python 2.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto CSS 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto CSS 1</h5>
+                                <p class="card-text">Descripción breve del proyecto CSS 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 4 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto CSS 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto CSS 2</h5>
+                                <p class="card-text">Descripción breve del proyecto CSS 2.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 5 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto HTML 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto HTML 1</h5>
+                                <p class="card-text">Descripción breve del proyecto HTML 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 6 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto HTML 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto HTML 2</h5>
+                                <p class="card-text">Descripción breve del proyecto HTML 2.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 7 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto JavaScript 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto JavaScript 1</h5>
+                                <p class="card-text">Descripción breve del proyecto JavaScript 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 8 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto JavaScript 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto JavaScript 2</h5>
+                                <p class="card-text">Descripción breve del proyecto JavaScript 2.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 9 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto Python 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto Python 3</h5>
+                                <p class="card-text">Descripción breve del proyecto Python 3.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 10 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto Python 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto Python 4</h5>
+                                <p class="card-text">Descripción breve del proyecto Python 4.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 11 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto CSS 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto CSS 3</h5>
+                                <p class="card-text">Descripción breve del proyecto CSS 3.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 12 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto CSS 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto CSS 4</h5>
+                                <p class="card-text">Descripción breve del proyecto CSS 4.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 13 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto HTML 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto HTML 3</h5>
+                                <p class="card-text">Descripción breve del proyecto HTML 3.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 14 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto HTML 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto HTML 4</h5>
+                                <p class="card-text">Descripción breve del proyecto HTML 4.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 15 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto JavaScript 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto JavaScript 3</h5>
+                                <p class="card-text">Descripción breve del proyecto JavaScript 3.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 16 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto JavaScript 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto JavaScript 4</h5>
+                                <p class="card-text">Descripción breve del proyecto JavaScript 4.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 17 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto Python 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto Python 5</h5>
+                                <p class="card-text">Descripción breve del proyecto Python 5.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 18 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto Python 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto Python 6</h5>
+                                <p class="card-text">Descripción breve del proyecto Python 6.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 19 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto CSS 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto CSS 5</h5>
+                                <p class="card-text">Descripción breve del proyecto CSS 5.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 20 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <img src="/api/placeholder/300/200" class="card-img-top" alt="Proyecto CSS 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto CSS 6</h5>
+                                <p class="card-text">Descripción breve del proyecto CSS 6.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Inicializar popover
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl, {
+                html: true
+            });
+        });
+
+        // Obtener el botón
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // Cuando el usuario haga scroll hacia abajo 20px desde la parte superior del documento, muestra el botón
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Cuando el usuario haga clic en el botón, lleva al principio del documento
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
